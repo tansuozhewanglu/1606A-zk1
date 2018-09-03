@@ -1,3 +1,4 @@
+//动态渲染页面
 $(function() {
     $('#inp').on('input', function() {
         var val = $(this).val();
