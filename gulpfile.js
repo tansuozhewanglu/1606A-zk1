@@ -37,7 +37,7 @@ gulp.task('server', function() {
                     var target = [];
                     listJson.forEach(function(item) {
                         if (item.title.match(key)) {
-                            target.push(title);
+                            target.push(item.title);
                         }
                     })
                     res.end(JSON.stringify({ code: 1, data: listJson }));
