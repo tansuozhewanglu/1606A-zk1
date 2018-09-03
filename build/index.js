@@ -1,0 +1,1 @@
+$(function(){$("#inp").on("input",function(){var t=$(this).val();t?$.ajax({url:"/api/list?key="+t,dataType:"json",success:function(t){if(1===t.code){var i="";t.data.forEach(function(t){i+="<li>"+t.title+"</li>"}),$(".list-tal").html(i)}}}):$(".list-tal").html("")})});
